@@ -1,0 +1,55 @@
+<title>CarProtege</title>
+<link rel="stylesheet" href="home.component.css">
+
+<body>
+<br>
+<div class="infoVehiculo" id="infoVehiculo">
+    <div class="columnaIzquierda">
+        <h3> 
+            <span id="matricula" class="matricula" >{{matricula1}}</span>
+        </h3>
+        <br>
+        <ul id="propiedadesCarro">
+            <li>Marca: <span id="marca">{{marca1}}</span></li>
+            <li>Modelo: <span id="modelo">{{modelo1}}</span></li>
+            <li>Color: <span id="color">{{color1}}</span></li>
+            <li>Año: <span id="año">{{ano1}}</span></li>
+            <li>Año ITV: <span id="fechaItv">{{fechaItv1}}</span></li>
+        </ul>
+        
+    </div>
+    
+    <div class="columnaIzquierda">
+        <h3>
+            <span id="matricula2" class="matricula">{{matricula2}}</span>
+        </h3>
+        <br>
+        <ul id="propiedadesCarro2">
+            <li>Marca: <span id="marca2">{{marca2}}</span></li>
+            <li>Modelo: <span id="modelo2">{{modelo2}}</span></li>
+            <li>Color: <span id="color2">{{color2}}</span></li>
+            <li>Año: <span id="año2">{{ano2}}</span></li>
+            <li>Año ITV: <span id="fechaItv2">{{fechaItv2}}</span></li>
+        </ul>
+    </div>
+</div>
+<script src="/home/home.js"></script>
+<script>
+    // Función para mostrar la información del vehículo en la página - PUEDE QUE ESTO NO FUNCIONE
+    function mostrarInformacionVehiculo(vehiculo, indice) {
+        document.getElementById('matricula' + indice).textContent = vehiculo.matricula;
+        document.getElementById('marca' + indice).textContent = vehiculo.marca;
+        document.getElementById('modelo' + indice).textContent = vehiculo.modelo;
+        document.getElementById('color' + indice).textContent = vehiculo.color;
+        document.getElementById('año' + indice).textContent = vehiculo.año;
+        document.getElementById('fechaItv' + indice).textContent = vehiculo.fechaItv;
+    }
+    
+    // Llamar a la función para mostrar la información del vehículo
+    mostrarInformacionVehiculo(vehiculo1, "");
+    mostrarInformacionVehiculo(vehiculo2, "2");
+    
+    var matriculaSpan = document.getElementById('matriculaBoton');
+    matriculaSpan.textContent = vehiculo1.matricula;
+</script>
+</body>

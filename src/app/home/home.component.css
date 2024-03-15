@@ -1,0 +1,40 @@
+.columnaIzquierda{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.columnaDerecha{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.matricula{
+    width: 3px;
+    border: 3px solid #3ba3d1;
+    padding: 2px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 391px){
+    .infoVehiculo{
+        margin-left: 20%;
+    }
+    .matricula{
+        width: 3px;
+        border: 3px solid #3ba3d1;
+        padding: 2px;
+        margin: 30px;
+        border-radius: 15px;
+        font-size: 60%;
+        
+    }
+}

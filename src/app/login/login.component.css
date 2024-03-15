@@ -1,0 +1,235 @@
+*{
+    font-weight: bold;
+}
+
+.logo{
+    width: 20%;
+    border-radius: 100%;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.contenedor {
+display: flex;
+}
+.areaIzquierda{
+    flex: 1;
+    font-size: 35px;
+    width: 45%;
+    margin-right: 0%;
+    margin-left: -1%;
+}
+.areaDerecha {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    float: right;
+    width: 55%; /* Ajuste para dar más espacio al área derecha */
+    max-width: 100%;
+    font-size: 100%;
+    background-image: url("https://www.romacarabs.com/wp-content/uploads/2022/05/pinchazo-en-una-rueda-reparar-2.jpg");
+    background-size: cover; /* Hace que la imagen cubra completamente el área */
+    background-position: center; /* Centra la imagen */
+    color: white;
+    overflow: hidden; /* Para evitar cualquier desbordamiento */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    
+}
+.textoAreaDerecha{
+    font-size: 120%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#ventanaCorreo, #ventanaContraseña{
+    font-size: 80%;
+    margin-top: 1%;
+    text-align:center;
+    width: 45%;
+}
+
+#iniSesion {
+    background-color: #3ba3d1; /* Color de fondo azul */
+    color: white; /* Color de texto blanco */
+    border-radius: 49%; /* Bordes redondeados */
+    padding: 1% 1%; /* Espacio de relleno ajustable */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor apuntador al pasar por encima */
+    font-size: 35px;
+    margin: 0 auto;
+    margin-left: 9%;
+    margin-top: 5%;
+}
+
+#iniSesion:hover {
+    background-color:#236CC4; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+#email, #password {
+    width: 30%;
+    border-radius: 30%; /* Bordes redondeados */
+    border: 3px solid #3ba3d1; /* Borde fino azul */
+    padding: 15px; /* Espacio de relleno ajustable */
+    margin-bottom: 2%; /* Margen inferior para separar los elementos */
+    margin-right: 2%;
+    margin-left: 2%;
+    
+}
+
+
+.correoYMail{
+    margin-top: 2%;
+    font-size: 80%;
+    margin-right: 2%;
+}
+
+.formularioContrasena{
+    margin-top: -3%;
+    font-size: 80%;
+    margin-right: 2%;
+}
+
+.beneficiosCarProtege {
+    margin-left: 8%;
+    margin-top: 15%;
+    list-style-type: none; /* Oculta las viñetas predeterminadas */
+    padding-left: 0; /* Elimina el espacio de la izquierda */
+}
+
+.beneficiosCarProtege li {
+    padding-left: 6%; /* Agrega espacio a la izquierda para la imagen */
+    background: url("../login/greenCheck.png") no-repeat left center; /* Especifica la imagen como fondo */
+    background-size:contain; /* Ajusta el tamaño de la imagen */
+    margin-bottom: 1%; /* Ajusta el margen inferior según sea necesario */
+    font-size: 140%;
+}
+
+.registrate{
+    margin-top: 0%;
+    padding: 0%;
+    font-size: 80%;
+    margin-left: 5.5%;
+}
+/* El siguiente media query es para un iphone12Pro */
+@media (max-width: 391px){
+    *{
+        font-weight: bold;
+    }
+    
+    h3{
+        font-size:100%;
+    }
+    .logo{
+        width: 12%;
+        border-radius: 100%;
+        margin-top: 5%;
+        margin-left: -1%;
+    }
+    
+    .contenedor {
+    display: flex;
+    }
+    .areaIzquierda{
+        flex: 1;
+        font-size: 80%;
+        width: 45%;
+        margin-right: 10%;
+        margin-left: 5%;
+    }
+    .areaDerecha {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        float: right;
+        width: 55%; /* Ajuste para dar más espacio al área derecha */
+        max-width: 100%;
+        font-size: 100%;
+        background-image: url("https://www.romacarabs.com/wp-content/uploads/2022/05/pinchazo-en-una-rueda-reparar-2.jpg");
+        background-size: cover; /* Hace que la imagen cubra completamente el área */
+        background-position: center; /* Centra la imagen */
+        color: white;
+        overflow: hidden; /* Para evitar cualquier desbordamiento */
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        
+    }
+    .textoAreaDerecha{
+        font-size: 100%;
+        margin-top: 39%;
+        text-align: center;
+    }
+    
+    #ventanaCorreo, #ventanaContraseña{
+        font-size: 40%;
+        margin-top: 1%;
+        text-align:center;
+        width: 45%;
+    }
+    
+    #iniSesion {
+        background-color: #3ba3d1; /* Color de fondo azul */
+        color: white; /* Color de texto blanco */
+        border-radius: 49%; /* Bordes redondeados */
+        padding: 3% 3%; /* Espacio de relleno ajustable */
+        border: none; /* Sin borde */
+        cursor: pointer; /* Cursor apuntador al pasar por encima */
+        font-size: 80%;
+        margin: 0 auto;
+        margin-left: 9%;
+        margin-top: 5%;
+    }
+    
+    #iniSesion:hover {
+        background-color:#236CC4; /* Color de fondo más oscuro al pasar el ratón */
+    }
+    
+    #email, #password {
+        width: 30%;
+        border-radius: 30%; /* Bordes redondeados */
+        border: 3px solid #3ba3d1; /* Borde fino azul */
+        padding: 15px; /* Espacio de relleno ajustable */
+        margin-bottom: 2%; /* Margen inferior para separar los elementos */
+        margin-right: 2%;
+        margin-left: 2%;
+        
+    }
+    
+    
+    .correoYMail{
+        margin-top: 2%;
+        font-size: 80%;
+        margin-right: 2%;
+        margin-left: 11%;
+    }
+    
+    .formularioContrasena{
+        margin-top: -3%;
+        font-size: 80%;
+        margin-right: 2%;
+    }
+    
+    .beneficiosCarProtege {
+        margin-left: 8%;
+        margin-top: 15%;
+        list-style-type: none; 
+        padding-left: 0; 
+    }
+    
+    .beneficiosCarProtege li {
+        padding-left: 20%; /* Agrega espacio a la izquierda para la imagen */
+        background: url("../login/greenCheck.png") no-repeat left center; /* Especifica la imagen como fondo */
+        background-size:10%; /* Ajusta el tamaño de la imagen */
+        margin-bottom: 1%; /* Ajusta el margen inferior según sea necesario */
+        font-size: 100%;
+        padding-top: 10%;
+    }
+    
+    .registrate{
+        margin-top: 0%;
+        padding: 0%;
+        font-size: 100%;
+        margin-left: 2%;
+    }
+
+  }
