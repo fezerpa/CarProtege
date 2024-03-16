@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RevisionesComponent } from './revisiones/revisiones.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
+// import { CabeceraComponent } from './cabecera/cabecera.component';
 
 
 const routes: Routes = [
@@ -38,7 +39,9 @@ const routes: Routes = [
   {
     path:"usuarios", component: UsuariosComponent
   }
-
+  // {
+  //   path:"cabecera", component: CabeceraComponent
+  // }
 
 ];
 

@@ -2,6 +2,19 @@ ul{
     margin-top: 1%;
 }
 
+#bodyCoches{
+    margin-top: 1%;
+}
+.centrado{
+    margin-left: auto;
+    display: flex;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    color: #3ba3d1;
+    text-decoration: underline;
+    margin-bottom: 5%;
+}
 .contenedor{
     margin-left: auto;
     display: flex;

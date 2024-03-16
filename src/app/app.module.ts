@@ -46,6 +46,9 @@ const routes: Routes = [
   },
   {
     path:"usuarios", component: UsuariosComponent
+  },
+  {
+    path:"cabecera", component: CabeceraComponent
   }
 
 ];
