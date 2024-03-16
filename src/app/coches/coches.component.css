@@ -1,23 +1,35 @@
-.matricula{
-    font-weight: bolder;
-    border: 4px solid #3ba3d1;
-    border-radius: 15px;
-    margin-right: 48%;
-    padding-left: 3%;
-}
-.caracteristicasCoche{
-    list-style-type: none;
-    font-weight: bold;
+ul{
+    margin-top: 1%;
 }
 
 .contenedor{
-    margin-left: 5%;
+    margin-left: auto;
     display: flex;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
     margin-top: 2%;
 }
 
 .contenedorIzquierda, .contenedorDerecha{
-    flex: 1;
+    margin-right: 20%;
+    
+}
+
+.matricula{
+    font-weight: bolder;
+    border: 4px solid #3ba3d1;
+    border-radius: 15px;
+    padding-left: 23%;
+    width: 150%;
+}
+.caracteristicasCoche{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: larger;
+}
+#contenedorBotones{
+    width: 250%;
 }
 
 .boton{
@@ -28,9 +40,20 @@
     margin: 1%;
     padding-right: 2%;
     padding-left: 2%;
+    font-size: 120%;
+    font-weight: bold;
+    width: 30%;
 }
 
 #botonAñadirCoche{
+    background-color: #3ba3d1;
+    color: white;
+    border-radius: 15px;
+    border: 4px solid #3ba3d1;
+    margin: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
     font-weight: bold;
     font-size: 130%;
 }
+
