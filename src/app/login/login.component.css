@@ -46,16 +46,16 @@ display: flex;
     font-size: 80%;
     margin-top: 1%;
     text-align:center;
-    width: 45%;
+    width: 34%;
 }
 
 #iniSesion {
-    background-color: #3ba3d1; /* Color de fondo azul */
-    color: white; /* Color de texto blanco */
-    border-radius: 49%; /* Bordes redondeados */
-    padding: 1% 1%; /* Espacio de relleno ajustable */
-    border: none; /* Sin borde */
-    cursor: pointer; /* Cursor apuntador al pasar por encima */
+    background-color: #3ba3d1; 
+    color: white; 
+    border-radius: 49%; 
+    padding: 1% 1%; 
+    border: none; 
+    cursor: pointer; 
     font-size: 35px;
     margin: 0 auto;
     margin-left: 9%;
@@ -63,7 +63,7 @@ display: flex;
 }
 
 #iniSesion:hover {
-    background-color:#236CC4; /* Color de fondo más oscuro al pasar el ratón */
+    background-color:#236CC4; 
 }
 
 #email, #password {
@@ -87,7 +87,8 @@ display: flex;
 .formularioContrasena{
     margin-top: -3%;
     font-size: 80%;
-    margin-right: 2%;
+    margin-left: -6%;
+    width: 100%;
 }
 
 .beneficiosCarProtege {
