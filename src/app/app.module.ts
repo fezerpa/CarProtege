@@ -19,6 +19,7 @@ import { FormBuilder,FormGroup } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AgregarCocheComponent } from './agregar-coche/agregar-coche.component';
 import { CabeceraComponent } from './compartidos/cabecera/cabecera.component';
+import { TalleresComponent } from './talleres/talleres.component';
 
 const routes: Routes = [
   {
@@ -67,7 +68,8 @@ const routes: Routes = [
     RevisionesComponent,
     LoginComponent,
     AgregarCocheComponent,
-    CabeceraComponent
+    CabeceraComponent,
+    TalleresComponent
   ],
   imports: [
     BrowserModule,
