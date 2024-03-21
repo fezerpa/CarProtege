@@ -5,7 +5,7 @@
 <br>
 <div class="infoVehiculo" id="infoVehiculo">
     <div class="columnaIzquierda">
-        <h3> 
+        <h3>
             <span id="matricula" class="matricula" >{{matricula1}}</span>
         </h3>
         <br>
@@ -16,7 +16,6 @@
             <li>Año: <span id="año">{{ano1}}</span></li>
             <li>Año ITV: <span id="fechaItv">{{fechaItv1}}</span></li>
         </ul>
-        
     </div>
     
     <div class="columnaIzquierda">
@@ -35,7 +34,7 @@
 </div>
 <script src="/home/home.js"></script>
 <script>
-    // Función para mostrar la información del vehículo en la página - PUEDE QUE ESTO NO FUNCIONE
+    // Función para mostrar la información del vehículo en la página
     function mostrarInformacionVehiculo(vehiculo, indice) {
         document.getElementById('matricula' + indice).textContent = vehiculo.matricula;
         document.getElementById('marca' + indice).textContent = vehiculo.marca;

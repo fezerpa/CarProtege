@@ -1,0 +1,67 @@
+.contenedorCabecera {
+    display: flex;
+    margin-top: 2%;
+}
+
+.contenedorIzquierda,
+.contenedorCentral,
+.contenedorDerecho {
+    flex: 1;
+}
+
+.contenedorIzquierda {
+    text-align: left;
+}
+
+.contenedorCentral {
+    text-align: center;
+}
+
+.contenedorDerecho {
+    text-align: right;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+}
+
+.logotipo img {
+    width: 25%;
+    margin-right: 2%;
+}
+
+.cerrarSesionContenedor {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.fotoPersona {
+    width: 30%;
+    margin-bottom: 5px; 
+}
+
+.cerrarSesion {
+    font-weight: bold;
+    margin-top: 5px;
+    background-color: #3ba3d1;
+    color: white;
+    border-radius: 15px;
+    border: 4px solid #3ba3d1;
+}
+#buscador{
+    width: 100%;
+    border-radius: 15px;
+    border: 2.5px solid #3ba3d1;
+}
+
+#buscador::placeholder{
+    text-align: center;
+}
+
+.nombreUsuario{
+    font-style: italic ;
+    color: #3ba3d1;
+    text-decoration: underline;
+}

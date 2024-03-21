@@ -8,7 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RevisionesComponent } from './revisiones/revisiones.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
-// import { CabeceraComponent } from './cabecera/cabecera.component';
+import { AgregarCocheComponent } from './agregar-coche/agregar-coche.component';
+
 
 
 const routes: Routes = [
@@ -38,10 +39,11 @@ const routes: Routes = [
   },
   {
     path:"usuarios", component: UsuariosComponent
+  },
+  {
+    path:"agregar", component: AgregarCocheComponent
   }
-  // {
-  //   path:"cabecera", component: CabeceraComponent
-  // }
+
 
 ];
 

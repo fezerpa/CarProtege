@@ -10,14 +10,15 @@ import { FacturasComponent } from './facturas/facturas.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RevisionesComponent } from './revisiones/revisiones.component';
-import { SidebarComponent } from './compartidos/sidebar/sidebar.component';  
+import { SidebarComponent } from './compartidos/sidebar/sidebar.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { FormBuilder,FormGroup } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CabeceraComponent } from './cabecera/cabecera.component';
+import { AgregarCocheComponent } from './agregar-coche/agregar-coche.component';
+import { CabeceraComponent } from './compartidos/cabecera/cabecera.component';
 
 const routes: Routes = [
   {
@@ -48,7 +49,7 @@ const routes: Routes = [
     path:"usuarios", component: UsuariosComponent
   },
   {
-    path:"cabecera", component: CabeceraComponent
+    path:"agregar", component: AgregarCocheComponent
   }
 
 ];
@@ -57,7 +58,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    SidebarComponent, 
+    SidebarComponent,
     CochesComponent,
     FacturasComponent,
     UsuariosComponent,
@@ -65,6 +66,7 @@ const routes: Routes = [
     ColaboradoresComponent,
     RevisionesComponent,
     LoginComponent,
+    AgregarCocheComponent,
     CabeceraComponent
   ],
   imports: [

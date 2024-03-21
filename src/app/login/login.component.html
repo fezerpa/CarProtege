@@ -1,5 +1,56 @@
+<!-- <div class="contenedor">
+  <form [formGroup]="formLogin" (ngSubmit)="send(formLogin)" >
+    <div>
+      <label for="email">Email</label>
+      <input 
+        type="text" 
+        id="email" 
+        formControlName="email" 
+        required="email"
+        >
+      </div>
+      <div *ngIf="formLogin.get('email')?.touched && formLogin.get('email')?.hasError">
+        <div *ngIf="formLogin.get('email')?.hasError('required')" class="alert alert-danger">
+          El email es requerido
+        </div>
+        <div *ngIf="formLogin.get('email')?.hasError('email')" class="alert alert-danger">
+          El email no es valido
+        </div>
+
+      </div>
+
+
+      
+    
+    <div>
+      <label for="password">Contraseña</label>
+      <input 
+        type="password" 
+        id="password"
+        formControlName="password"
+        required>
+    </div>
+    <div *ngIf="formLogin.get('password')?.touched && formLogin.get('password')?.hasError('required')" class="alert alert-danger"> Es requerido</div>
+
+    <div>
+      <button type="submit" [disabled]="!formLogin.valid">Iniciar Sesión</button>
+    </div>
+  </form>
+</div> 
+
+   -->
+
+
+
    <div class="contenedor">
     <div class="areaIzquierda">
+        <h3>
+          <img src="https://www.pngkit.com/png/full/119-1192140_carro-png-sin-fondo-gt-sport-nav-mazda.png" alt="logo" class="logo">
+          CarProtege
+        </h3>
+
+
+
         <!-- boton de inicio de sesión -->
         <form [formGroup]="formLogin" (ngSubmit)="send(formLogin)" >
         <button id="iniSesion" class="iniSesion">Iniciar Sesión</button>
@@ -16,26 +67,30 @@
             >
           </div>
           <div *ngIf="formLogin.get('email')?.touched && formLogin.get('email')?.hasError">
-            <div *ngIf="formLogin.get('email')?.hasError('required')" class="alert alert-danger" id="ventanaCorreo" >
+            <div *ngIf="formLogin.get('email')?.hasError('required')" class="alert alert-danger">
               El email es requerido
             </div>
-            <div *ngIf="formLogin.get('email')?.hasError('email')" class="alert alert-danger" id="ventanaCorreo" >
+            <div *ngIf="formLogin.get('email')?.hasError('email')" class="alert alert-danger">
               El email no es valido
             </div>
             <br>
-            <div class="formularioContrasena">
-              <label for="password" class="password">Contraseña</label>
+            <div>
+              <label for="password">Contraseña</label>
               <input 
                 type="password" 
                 id="password"
                 formControlName="password"
-                required
-                placeholder="***********"
-                >
+                placeholder="******"
+                required>
             </div>
-            <div *ngIf="formLogin.get('password')?.touched && formLogin.get('password')?.hasError('required')" class="alert alert-danger" id="ventanaContraseña"> Es requerido</div>
+            <div *ngIf="formLogin.get('password')?.touched && formLogin.get('password')?.hasError('required')" class="alert alert-danger"> Es requerido</div>
         </div>
       </form>
+
+
+
+
+
 
 
         <!-- Incentivo a registrarse -->
@@ -62,4 +117,3 @@
         </ul>
     </div>
 </div>
-

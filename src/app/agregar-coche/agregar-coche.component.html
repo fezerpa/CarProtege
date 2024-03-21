@@ -1,0 +1,84 @@
+<div class="contenedor">
+    <form [formGroup]="formularioCoche" (ngSubmit)="send(formularioCoche)" >
+    
+        <!-- MATRICULA -->
+        <label for="matricula">{{matricula}}</label>
+        <input 
+          type="text" 
+          id="matricula"
+          formControlName="matricula"
+          required
+          placeholder="Introduce la matrícula del coche"
+          >
+    
+          <!-- ALERTA MATRICULA -->
+      
+          <div *ngIf="formularioCoche.get('matricula')?.touched && formularioCoche.get('matricula')?.hasError('required')" class="alert alert-danger" id="alerta"> El modelo es requerido</div>
+           
+    
+        <!-- MODELO -->
+        <br/>
+        <label for="modelo"></label>
+        <input 
+          type="text" 
+          id="modelo"
+          formControlName="modelo"
+          required
+          placeholder="Introduce el modelo del coche">
+    
+          <!-- ALERTA MODELO -->
+      
+      <div *ngIf="formularioCoche.get('modelo')?.touched && formularioCoche.get('modelo')?.hasError('required')" class="alert alert-danger"> El modelo es requerido</div>
+    
+      <!-- COLOR -->
+      <br/>
+      <label for="color" ></label>
+      <input 
+        type="text" 
+        id="color"
+        formControlName="color"
+        required
+        placeholder="Introduce el color del coche" >
+    
+        <!-- ALERTA COLOR-->
+    
+    <div *ngIf="formularioCoche.get('color')?.touched && formularioCoche.get('color')?.hasError('required')" class="alert alert-danger"> El color es requerido</div>
+    
+    <!-- AÑO COCHE -->
+    <br/>
+    <label for="anioCoche">Introduce el año del coche</label>
+    <input 
+      type="date" 
+      id="anioCoche"
+      formControlName="anioCoche"
+      required
+      >
+    
+      <!-- ALERTA AÑO COCHE-->
+    
+    <div *ngIf="formularioCoche.get('anioCoche')?.touched && formularioCoche.get('anioCoche')?.hasError('required')" class="alert alert-danger"> El año es requerido</div>
+    
+    <!-- FECHA ITV -->
+    <br/>
+    <label for="fechaITV">Introduce la fecha de la ITV</label>
+    <input 
+      type="date" 
+      id="fechaITV"
+      formControlName="fechaITV"
+      required
+      >
+    
+      <!-- ALERTA AÑO COCHE-->
+    
+    <div *ngIf="formularioCoche.get('fechaITV')?.touched && formularioCoche.get('fechaITV')?.hasError('required')" class="alert alert-danger"> Le fecha de la ITV es requerida</div>
+    
+
+    <button id="aceptar" class="aceptar">ACEPTAR </button>
+    </form>
+    
+    
+    
+     
+
+    </div>
+    

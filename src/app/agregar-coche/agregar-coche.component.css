@@ -1,0 +1,18 @@
+.contenedor{
+    margin-left: auto;
+     display: flex;
+     margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+#matricula, #color, #anioCoche, #fechaITV, #modelo{
+    font-weight: bolder;
+    border: 4px solid #3ba3d1;
+    border-radius: 15px;
+    padding-left: 23%;
+    width: 150%;
+}
+#alerta{
+    z-index: 1000;
+    position: absolute;
+}
