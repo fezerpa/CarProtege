@@ -20,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AgregarCocheComponent } from './agregar-coche/agregar-coche.component';
 import { CabeceraComponent } from './compartidos/cabecera/cabecera.component';
 import { TalleresComponent } from './talleres/talleres.component';
+import { GestorUsuariosComponent } from './gestor-usuarios/gestor-usuarios.component';
 
 const routes: Routes = [
   {
@@ -69,7 +70,8 @@ const routes: Routes = [
     LoginComponent,
     AgregarCocheComponent,
     CabeceraComponent,
-    TalleresComponent
+    TalleresComponent,
+    GestorUsuariosComponent
   ],
   imports: [
     BrowserModule,
